@@ -265,7 +265,7 @@ button {
 
 .hero__media {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     margin-top: 111px;
     padding-bottom: 146px;
     position: relative;
@@ -297,7 +297,7 @@ button {
     box-shadow: inset 0px 39px 31px #313141;
     border-radius: 50%;
     bottom: 73px;
-    left: -46px;
+    left: 32git px;
     z-index: -1;
 }
 
@@ -309,8 +309,8 @@ button {
 
 .hero-collection {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 80px;
+    bottom: -30px;
     max-width: 216px;
     padding: 26px 15px;
     background: #0d1012;
@@ -1376,7 +1376,11 @@ button {
     border-radius: 15px;
 }
 
-.picture-item-active {
+.picture-item + .picture-item {
+    margin-top: 18px;
+}
+
+.picture-item:hover {
     background: #282c30;
 }
 
@@ -1542,4 +1546,206 @@ button {
 .refesh-item:nth-child(3) .refesh-item__skeleton::before {
     width: 26px;
     background: #ef8f00;
+}
+
+/* Review */
+.review {
+    padding: 140px 0 165px;
+}
+
+.review__list {
+    display: flex;
+    column-gap: 32px;
+    overflow: hidden;
+}
+
+.review__item {
+    padding: 30px 40px 35px;
+    background: #131517;
+    border: 1px solid #282c30;
+    border-radius: 10px;
+    flex-shrink: 0;
+    width: calc(33.33% - 32px);
+}
+
+.review__item-quote {
+    color: #282c30;
+    margin-left: 205px;
+    transition: 0.05s;
+}
+
+.review__item:hover {
+    background: #282c30;
+}
+
+.review__item:hover .review__item-quote {
+    color: #0cce84;
+    rotate: 180deg;
+}
+
+.review__item-desc {
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #6e737a;
+    margin-top: 26px;
+}
+
+.review__item-rate {
+    display: flex;
+    margin-top: 22px;
+}
+
+.review__item-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.review__item-info-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #f9f9f9;
+}
+
+.review__item-info-job {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #858b93;
+}
+
+.review__item-stars {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.review__control {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    column-gap: 43px;
+    margin-right: 99px;
+}
+
+.review__control-previous {
+    rotate: 180deg;
+}
+
+.review__control-item {
+    color: #858b93;
+    cursor: pointer;
+}
+
+.review__control-item:hover {
+    color: #ef8f00;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(0deg, #0d1012, #0d1012), url(image.png);
+}
+
+.footer-container {
+    width: 1096px;
+}
+
+.footer__top {
+    padding-top: 67px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid #272633;
+    display: flex;
+    align-items: center;
+}
+
+.footer__get-started {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.45;
+    color: #858b93;
+    margin-left: 406px;
+    margin-right: 54px;
+}
+
+.fotter__btn {
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #f9f9f9;
+    width: 165px;
+    height: 55px;
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.footer__content {
+    display: flex;
+    padding: 70px 0 150px;
+}
+
+.footer__content-left {
+    margin-right: 154px;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.45;
+    color: #f9f9f9;
+}
+
+.footer__form {
+    margin-top: 45px;
+}
+
+.footer__form-input {
+    width: 307px;
+    border: 1px solid #272633;
+    border-radius: 26px;
+    background: transparent;
+    padding: 12px 25px;
+}
+
+.footer__form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    margin-left: -50px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+}
+
+.footer__media {
+    margin-top: 45px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer__content-item + .footer__content-item {
+    margin-left: 55px;
+}
+
+.footer__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #272633;
+}
+
+.footer__content-list {
+    margin-top: 22px;
+}
+
+.footer__content-link {
+    font-size: 1.8rem;
+    line-height: 2.11;
+    color: #555555;
 }
