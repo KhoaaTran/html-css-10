@@ -265,7 +265,7 @@ button {
 
 .hero__media {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin-top: 111px;
     padding-bottom: 146px;
     position: relative;
@@ -1700,6 +1700,9 @@ button {
 }
 
 .footer__form-input {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #858b93;
     width: 307px;
     border: 1px solid #272633;
     border-radius: 26px;
