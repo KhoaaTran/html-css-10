@@ -199,6 +199,7 @@ button {
     font-size: 1.6rem;
     line-height: 1.62;
     color: #f9f9f9;
+    border-radius: 8px;
 }
 
 .hero__btn:nth-child(2) {
@@ -444,15 +445,16 @@ button {
     position: absolute;
     content: "";
     width: 195px;
-    border: 1px dashed #858b93;
 }
 
 .services-item:nth-child(2) .serveces-item__img-wrap::after {
+    border-top: 1px dashed #858b93;
     top: 50%;
     right: calc(65px + 45px);
 }
 
 .services-item:nth-child(2) .serveces-item__img-wrap::before {
+    border-bottom: 1px dashed #858b93;
     top: 50%;
     left: calc(65px + 45px);
 }
@@ -1657,6 +1659,8 @@ button {
     border-bottom: 1px solid #272633;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
 }
 
 .footer__get-started {
@@ -1664,8 +1668,8 @@ button {
     font-size: 2.2rem;
     line-height: 1.45;
     color: #858b93;
-    margin-left: 406px;
-    margin-right: 54px;
+    /* margin-left: 406px;
+    margin-right: 54px; */
 }
 
 .fotter__btn {
@@ -1751,4 +1755,10 @@ button {
     font-size: 1.8rem;
     line-height: 2.11;
     color: #555555;
+}
+
+.footer__get-started-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 54px;
 }
